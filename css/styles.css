@@ -1,12 +1,14 @@
 :root {
     --primary-text-color:#757575;
+    --primary-white-color: #FFFFFF;
+    --title-text-color: #212121;
     --primary-bg-color: #E5E5E5;
     --accent-color: #2196F3;
 }
 
 body {
-    background-color: #E5E5E5;
-    color: #757575;
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
 }
 .list{
     list-style: none;
@@ -14,35 +16,42 @@ body {
 
 /* head */
 .head {
-    background: #FFFFFF;
+    background: var(--primary-white-color);
 }
 
 /* site-nav */
-.site-nav .studia {
-    color: #2196F3;
+.site-nav .link.current {
+    color: var(--accent-color);
 }
-.site-nav .studia:hover,
-.site-nav .studia:focus {
+.site-nav .current:hover,
+.site-nav .current:focus {
     color: teal;
 }
-.site-nav .contacts {
-    color: #212121;
+.site-nav .link {
+    color: var(--title-text-color);
 }
-.site-nav .contacts:hover, 
-.site-nav .contacts:focus {
+.site-nav .link:hover, 
+.site-nav .link:focus {
     color: teal;
 }
 
 /* contact */
 .contact .mail {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 .contact .mail:hover,
 .contact .mail:focus {
     color: teal;
 }
+.contact .mailto:hover,
+.contact .mailto:focus {
+    color: teal;
+}
+.contact .mailto {
+    color: var(--primary-text-color);
+}
 .contact .tel {
-    color: #757575;
+    color: var(--primary-text-color);
 }
 .contact .tel:hover,
 .contact .tel:focus {
@@ -54,23 +63,28 @@ body {
     background: #2F303A;
 }
 .hero .title {
-    color: #FFFFFF;
+    color: var(--primary-white-color);
 }
 
 /* button */
 .button {
-    background-color: #2196F3;
-    color: #E5E5E5;
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
 }
 
 /* section */
 .section-title {
-    color: #212121;
+    color: var(--title-text-color);
 }
 
 /* features */
 .features .title {
-    color: #212121;
+    color: var(--title-text-color);
+}
+
+/* team */
+.section .name {
+    color: var(--title-text-color);
 }
 
 
