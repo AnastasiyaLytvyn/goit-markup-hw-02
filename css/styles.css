@@ -93,6 +93,7 @@ body {
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
+    text-transform: uppercase;
 }
 
 /* work */
@@ -123,7 +124,8 @@ body {
 }
 .list .buttons:hover,
 .list .buttons:focus {
-    color: var(--accent-color);
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
 }
 .list .variant {
     color: var(--primary-white-color);
