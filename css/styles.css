@@ -97,7 +97,7 @@ body {
 }
 
 /* button */
-.button {
+.hero-button {
     background-color: var(--accent-color);
     color: var(--primary-bg-color);
 
